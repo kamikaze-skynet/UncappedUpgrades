@@ -30,3 +30,7 @@ Each player's own game builds their level-up shop, so **everyone should have the
 Stat names for `KeepLimitsFor`: Damage, Size, FireRate (cast speed), MovementSpeed, MaxHealth, HealthRegeneration, Armor, Dodge, CriticalChance, CriticalDamage, Luck, XPGain (mana gain), PickupRadius (mana pull), Range, Speed, LifeTime, Projectiles, Rerolls, Revives, ReviveSpeed, GoldGain.
 
 Works with MoreWizards, StarterSpells, TripleInfusion, ReviveRegen, RunSaves and BetterNetcode.
+
+## Multiplayer settings
+
+In multiplayer everyone plays with the **host's** settings: the host's config is sent to every player from the lobby on, and the mod reads it instead of yours while you're connected. Your config file is never changed. If the host doesn't have this mod, it stays off for you in that game.

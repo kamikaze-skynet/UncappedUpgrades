@@ -20,7 +20,7 @@ public class Plugin : BasePlugin
 {
     public const string Guid = "girthy_mods.UncappedUpgrades";
     public const string Name = "UncappedUpgrades";
-    public const string Version = "1.0.0";
+    public const string Version = "1.0.1";
 
     internal static new ManualLogSource Log;
 
@@ -31,6 +31,7 @@ public class Plugin : BasePlugin
     public override void Load()
     {
         Log = base.Log;
+        HostConfig.Init(this, Guid, System.Array.Empty<string>(), new System.Collections.Generic.Dictionary<string, string> { ["Limits.Enabled"] = "false" });
 
         Enabled = Config.Bind("Limits", "Enabled", true,
             "Remove (or raise) the limits on stat upgrades in the level-up shop.");
