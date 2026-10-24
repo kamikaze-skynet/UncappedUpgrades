@@ -1,0 +1,9 @@
+{
+  "name": "UncappedUpgrades",
+  "version_number": "1.0.0",
+  "website_url": "https://github.com/kamikaze-skynet/UncappedUpgrades",
+  "description": "Removes the limits on stat upgrades in the level-up shop (damage, spell size, cast speed, luck, crit, health...), or raises them. The host's settings apply to everyone.",
+  "dependencies": [
+    "BepInEx-BepInExPack_IL2CPP-6.0.788"
+  ]
+}
